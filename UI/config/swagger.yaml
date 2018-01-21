@@ -1,0 +1,83 @@
+swagger: '2.0'
+info:
+  title: Registration API
+  description: >-
+    This service provides the API that controls the flow of the various
+    processes in the application
+  version: 0.0.1
+host: localhost
+schemes:
+  - http
+basePath: /v1/
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /login:
+    post:
+      summary: This endpoint registers the user with the application
+      description: >
+        This endpoint takes the aadhar number, shopkeeper Id , auth data,
+        user_type and start registration and get all relavent data to verify
+        before registration is complete 
+      parameters:
+        - name: loginParams
+          in: body
+          description: login Params
+          required: true
+          schema:
+            $ref: "#/definitions/loginParams"
+      tags:
+        - user
+        - create
+      responses:
+        '200':
+          description: Response object contains the status of the registration request
+    get:
+      summary: login page
+      description: login page
+      tags:
+        - user
+        - create
+      responses:
+        '200':
+          description: Response object contains the status of the registration request
+  /request/preFellPremit:
+    post:
+      summary: This endpoint puts in the request to create permit to cut tree
+      parameters:
+        - name: owner
+          in: body
+          description: owner name
+          required: true
+          schema:
+            $ref: "#/definitions/preFellParams"
+      responses:
+        '200':
+          description: Response object contains the status of the registration request
+definitions:
+  preFellParams:
+    type: object
+    properties:
+      aadhar:
+        type: string
+      owner:
+        type: string
+      address:
+        type: string
+      surveyNo:
+        type: string
+      khataNo:
+        type: string
+      censusNo:
+        type: array
+        items:
+          type: string
+      conversionType:
+        type: string
+  loginParams:
+    type: object
+    properties:
+      aadhar:
+        type: string

@@ -1,0 +1,37 @@
+body{
+    background-color: gainsboro;
+    
+}
+
+.headd {
+    background-image: url("tree.jpe");
+    color: white;
+    width:100%;
+    margin-bottom: 0;
+    background-repeat:round;
+}
+
+.form{
+    width: 30%;
+    min-width: 300px;
+    
+}
+    
+    .headd {
+        background-image: url("tree.jpe");
+        color: white;
+        width:100%;
+        margin-bottom: 0;
+        background-repeat:round;
+    }
+    
+    .form{
+        width: 30%;
+        min-width: 300px;
+        
+    }
+    #treefellpermit ,#sawmillanme ,#fromaddress ,#sawmilladdress , #vehiclenumber , #quantity , #rto {
+        text-align: center;
+        color:brown;
+        font-weight: bold;
+    }

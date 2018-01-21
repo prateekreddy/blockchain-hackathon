@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="js/log.js" language="Javascript" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  
+</head>
+<body>
+    <div class="jumbotron text-center headd">
+        <h1>MONITORING : TREE FELLING</h1>
+    </div>
+    
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="">Saw Mill</a>
+        </div>
+        <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <!-- <li><a href="details.html">Details</a></li> -->
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+    </div>
+    </nav>
+    <div class="container form">
+          <div class="form-group row">
+            <label for="permitId" class="col-2 col-form-label"><b>Transport Permit Id</b></label>
+            <div class="col-10">
+              <input class="form-control" type="text" placeholder="permit id" id="permitId">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="sawmillName" class="col-2 col-form-label"><b>Saw Mill Name</b></label>
+            <div class="col-10">
+              <input class="form-control" type="text" placeholder="saw mill name" id="sawmillName">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="stockreceived" class="col-2 col-form-label"><b>Stock Received</b></label>
+            <div class="col-10">
+              <input class="form-control" type="Number" placeholder="stock received" id="stockreceived">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="logsgenerated" class="col-2 col-form-label"><b>No. of logs generated</b></label>
+            <div class="col-10">
+              <input class="form-control" type="text" placeholder="no. of logs generated" id="logsgenerated">
+            </div>
+          </div>
+          
+          <div class="form-group row ">
+                <div class="col-sm-5">
+                            
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-success" onclick="sawmill()">Submit</button>
+                </div>
+                <div class="col-sm-3">
+                        
+                </div>
+          </div>       
+          <div class="form-group row">
+              <div class="col-sm-12" id="status">
+
+              </div>
+          </div>
+    </div>
+    
+</body>
+<script src="js/sawmill.js"></script>
+</html>

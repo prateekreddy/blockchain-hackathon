@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/addInput.js" language="Javascript" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  
+</head>
+<body>
+    <div class="jumbotron text-center headd">
+        <h1>MONITORING : TREE FELLING</h1>
+        
+    
+      </div>
+    
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="details.html">Details</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </ul>
+    </div>
+    </nav>
+    <div class="container form">
+    <div class="form-group row">
+            <label for="Owner" class="col-2 col-form-label"><b>Owner name</b></label>
+            <div class="col-10">
+              <input class="form-control" type="text" placeholder="Name" id="Owner">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Land-address" class="col-2 col-form-label"><b>Land-address</b></label>
+            <div class="col-10">
+              <input class="form-control" type="text" placeholder="Address" id="Land-address">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="SurveyNo" class="col-2 col-form-label"><b>Survey Number</b></label>
+            <div class="col-10">
+              <input class="form-control" type="Number" placeholder="Survey number" id="SurveyNo">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="KhataNo" class="col-2 col-form-label"><b>Khata Number</b></label>
+            <div class="col-10">
+              <input class="form-control" type="Number" placeholder="Khata number" id="KhataNo">
+            </div>
+          </div>
+          <form  class="a-form" method="POST">
+          <div class="form-group row">
+              <label for="CensusNo" class="col-2 col-form-label"><b>Census Number</b></label>
+            <br> <input type="text" class="form-control" name="myInputs[]">
+            <div class="col-10" id="dynamicInput">
+              
+
+              <!-- <form  class="a-form" method="POST">
+                   <div id="dynamicInput">
+                        Entry 1<br><input type="text" name="myInputs[]">
+                   </div>
+                   <input type="button" value="Add another text input" onClick="addInput('dynamicInput');">
+              </form> -->
+              
+            </div>
+            <input class="form-control" type="button" value="Add another text input" onClick="addInput('dynamicInput');"  id="CensusNo"data-role="tagsinput"  >
+          </div>
+        </form>
+          <div class="form-group row ">
+            <label for="conversionType" class="col-2 col-form-label "><b>Conversion Type</b><span class="caret"></span></label>
+            <div class="col-10">
+              <!-- <input class="form-control dropdown-toggle " type="text" placeholder="conversion type" id="conversionType" data-toggle="dropdown">
+              <ul class="dropdown-menu">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+              </ul> -->
+              <select>
+                    <option >Timber</option>
+                    <option >Sawdust</option>
+                    <option >logs</option>
+                    <option >Wood</option>
+                  </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="publicKey" class="col-2 col-form-label"><b>Public key</b></label>
+            <div class="col-10">
+              <input class="form-control" type="text" placeholder="public key" id="publicKey">
+            </div>
+          </div>
+          <div class="row ">
+                <div class="col-sm-5">
+                            
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-success" onclick="verifyOtp()">Submit</button>
+                </div>
+                <div class="col-sm-3">
+                        
+                </div>
+          </div>       
+        </div>
+    
+    <!-- <div class="container">
+    <h3>Right Aligned Navbar</h3>
+    <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+    </div> -->
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+    var res = str.split(" ");
+
+

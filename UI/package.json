@@ -1,0 +1,44 @@
+{
+    "name": "hackathon",
+    "description": "",
+    "version": "1.0.0",
+    "author": "Prateek <prateekreddyy@gmail.com>",
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/prateekreddy/hackathon.git"
+    },
+    "bugs": "http://github.com/prateekreddy/hackathon/issues",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
+    },
+    "dependencies": {
+        "async": "^2.6.0",
+        "body-parser": "^1.18.2",
+        "express": "^4.16.2",
+        "hapi": "^9.5.1",
+        "request": "^2.83.0",
+        "socket.io": "^2.0.4",
+        "swaggerize-hapi": "^2.0.0-",
+        "swagmock": "~0.0.2"
+    },
+    "devDependencies": {
+        "eslint": "^2",
+        "istanbul": "~0.4.3",
+        "is-my-json-valid": "^2.13.1",
+        "js-yaml": "^3.2.6",
+        "supertest": "^1.2.0",
+        "swagger-parser": "^3.4.1",
+        "tape": "^4"
+    },
+    "scripts": {
+        "test": "tape 'tests/**/*.js'",
+        "cover": "istanbul cover tape -- 'tests/**/*.js'",
+        "lint": "eslint .",
+        "regenerate": "yo swaggerize:test --framework hapi --apiPath './config/swagger.yaml'"
+    },
+    "generator-swaggerize": {
+        "version": "3.1.0"
+    },
+    "main": "./server"
+}

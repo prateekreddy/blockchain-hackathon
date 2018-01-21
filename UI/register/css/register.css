@@ -1,0 +1,12 @@
+.headd {
+    background-image: url("tree.jpe");
+    color: white;
+    }
+
+.bl{
+    background-color: aqua;
+}
+
+#registerForm {
+    display: none;
+}

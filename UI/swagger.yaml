@@ -1,0 +1,78 @@
+swagger: '2.0'
+info:
+  title: Registration API
+  description: >-
+    This service provides the API that controls the flow of the various
+    processes in the application
+  version: 0.0.1
+host: localhost
+schemes:
+  - http
+basePath: /v1/
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /register:
+    post:
+      summary: >-
+        This endpoint registers
+      description: >
+        This endpoint registers
+      parameters:
+        - name: username
+          in: query
+          description: Aadhar number of the entity that is to be registered
+          required: true
+          type: string
+        - name: password
+          in: query
+          description: Shopkeeper Id from where the registration is occuring.
+          required: true
+          type: string
+        - name: name
+          in: query
+          description: Shopkeeper Id from where the registration is occuring.
+          required: true
+          type: string
+        - name: email
+          in: query
+          description: Shopkeeper Id from where the registration is occuring.
+          required: true
+          type: string
+        - name: phone
+          in: query
+          description: Shopkeeper Id from where the registration is occuring.
+          required: true
+          type: string
+      tags:
+        - user
+        - create
+      responses:
+        '200':
+          description: Response object contains the status of the registration request
+  /login:
+    post:
+      summary: This endpoint registers the user with the application
+      description: >
+        This endpoint takes the aadhar number, shopkeeper Id , auth data,
+        user_type and start registration and get all relavent data to verify
+        before registration is complete 
+      parameters:
+        - name: username
+          in: query
+          description: Aadhar number of the entity that is to be registered
+          required: true
+          type: string
+        - name: password
+          in: query
+          description: Shopkeeper Id from where the registration is occuring.
+          required: true
+          type: string
+      tags:
+        - user
+        - create
+      responses:
+        '200':
+          description: Response object contains the status of the registration request

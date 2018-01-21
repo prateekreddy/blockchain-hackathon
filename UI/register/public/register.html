@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+        
+<div class="jumbotron text-center headd">
+    <h1>TREE FELLING</h1>
+</div>
+<div class="container">
+
+    <div class="row ">
+        <div class="col-sm-5">
+
+        </div>
+        <div class="col-sm-4">
+            <p><b>Enter your Aadhar number:</b></p>
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-sm-5">
+                    
+        </div>
+        <div class="col-sm-4">
+            <form >
+                <input type="number" id="aadhar" name="aadharNo" placeholder="Aadhar number here"><br>
+            </form>
+        </div>
+        <div class="col-sm-3">
+                
+            </div>
+    </div>
+    <br>
+    <div class="row ">
+        <div class="col-sm-5">
+                    
+        </div>
+        <div class="col-sm-4" id="otpModal">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#verifyOtp">
+                Send OTP
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="verifyOtp" tabindex="-1" role="dialog" aria-labelledby="verifyOtpLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="verifyOtpLabel">Verify Aadhar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <b>OTP: </b><input type="text" >
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="register()">verify</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12" id="registerForm">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-2">
+                    Name
+                </div>
+                <div class="col-sm-4">
+                    <input type="text">
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-2">
+                    Email
+                </div>
+                <div class="col-sm-4">
+                    <input type="text">
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-2">
+                    Password
+                </div>
+                <div class="col-sm-4">
+                    <input type="text">
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-2">
+                    Phone
+                </div>
+                <div class="col-sm-4">
+                    <input type="text">
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <br>
+            <div class="row text-center">
+                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="register()">Register</button>
+            </div>
+        </div>
+        </div>       
+           
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./js/register.js"></script>
+</html>
